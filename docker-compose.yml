@@ -10,10 +10,10 @@ services:
      - /var/log/nginx/laravel:/var/log/nginx/
    networks:
      laravel:
-       ipv4_address: 80.80.80.80
+       ipv4_address: 55.55.55.55
 networks:
  laravel:
    driver: bridge
    ipam:
      config:
-       - subnet: 80.80.80.0/24
+       - subnet: 55.55.55.0/24
