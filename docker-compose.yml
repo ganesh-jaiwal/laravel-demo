@@ -1,0 +1,19 @@
+version: "2"
+services:
+ laravel:
+   #build : docker-compose
+   image: server.router7f6750.com:5000/spark
+   container_name: laravel
+   restart: always
+   volumes:
+     - .:/var/www/
+     - /var/log/nginx/laravel:/var/log/nginx/
+   networks:
+     laravel:
+       ipv4_address: 80.80.80.80
+networks:
+ laravel:
+   driver: bridge
+   ipam:
+     config:
+       - subnet: 80.80.80.0/24
