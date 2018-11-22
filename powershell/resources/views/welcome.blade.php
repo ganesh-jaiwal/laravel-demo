@@ -2,11 +2,16 @@
 
 @section('title', 'Contact Us')
 
+@section('heading')
+<div class="heading">
+    <div class="title m-b-md">
+        Laravel With {{ $foo }}
+    </div>
+</div>
+@endsection
+
 @section('content')
 <!-- <div class="content"> -->
-<div class="title m-b-md">
-    Laravel With {{ $foo }}
-</div>
 <ul>
     @foreach($tasks as $task)
     <li>

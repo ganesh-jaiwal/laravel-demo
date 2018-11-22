@@ -6,11 +6,12 @@
                 <title>
                     @yield('title')
                 </title>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" rel="stylesheet"/>
                 <!-- Fonts -->
-                <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-                    <!-- Styles -->
-                    <style>
-                        html, body {
+                <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css"/>
+                <!-- Styles -->
+                <style>
+                    html, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -23,14 +24,23 @@
                 height: 100vh;
             }
 
+            .make-it-at-top {
+                display: block !important;
+                /*margin-top: 100px;*/
+            }
+
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
             }
 
+            .heading {
+                margin-top: 100px;
+            }
+
             .position-ref {
-                position: relative;
+                /*position: relative;*/
             }
 
             .top-right {
@@ -40,7 +50,7 @@
             }
 
             .content {
-                text-align: center;
+                /*text-align: center;*/
             }
 
             .title {
@@ -60,58 +70,59 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-                    </style>
-                </link>
+                </style>
             </meta>
         </meta>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                <a href="{{ url('/') }}">
-                    Home
-                </a>
-                <a href="{{ url('/home') }}">
-                    Dashboard
-                </a>
-                <a href="{{ url('/projects') }}">
-                    Projects
-                </a>
-                <a href="{{ url('/contact') }}">
-                    Contact Us
-                </a>
-                <a href="{{ url('/about') }}">
-                    About Us
-                </a>
-                @else
-                <a href="{{ url('/') }}">
-                    Home
-                </a>
-                <a href="{{ url('/projects') }}">
-                    Projects
-                </a>
-                <a href="{{ url('/contact') }}">
-                    Contact Us
-                </a>
-                <a href="{{ url('/about') }}">
-                    About Us
-                </a>
-                <a href="{{ route('login') }}">
-                    Login
-                </a>
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}">
-                    Register
-                </a>
-                @endif
-                    @endauth
-            </div>
+</html>
+<body>
+    <div class="flex-center position-ref full-height make-it-at-top">
+        @if (Route::has('login'))
+        <div class="top-right links">
+            @auth
+            <a href="{{ url('/') }}">
+                Home
+            </a>
+            <a href="{{ url('/home') }}">
+                Dashboard
+            </a>
+            <a href="{{ url('/projects') }}">
+                Projects
+            </a>
+            <a href="{{ url('/contact') }}">
+                Contact Us
+            </a>
+            <a href="{{ url('/about') }}">
+                About Us
+            </a>
+            @else
+            <a href="{{ url('/') }}">
+                Home
+            </a>
+            <a href="{{ url('/projects') }}">
+                Projects
+            </a>
+            <a href="{{ url('/contact') }}">
+                Contact Us
+            </a>
+            <a href="{{ url('/about') }}">
+                About Us
+            </a>
+            <a href="{{ route('login') }}">
+                Login
+            </a>
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}">
+                Register
+            </a>
             @endif
-            <div class="content">
-                @yield('content')
-                <!-- <div class="title m-b-md">
+                    @endauth
+        </div>
+        @endif
+        <div class="content">
+            @yield('heading')
+            @yield('content')
+            <!-- <div class="title m-b-md">
                     Laravel
                 </div>
 
@@ -123,10 +134,9 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div> -->
-            </div>
         </div>
-    </body>
-</html>
+    </div>
+</body>
 <!-- <ul>
         <li>
             <a href="/">Home</a>
