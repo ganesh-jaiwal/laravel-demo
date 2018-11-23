@@ -20,9 +20,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-function showEditProjectField() {
-    document.getElementsByClassName("edit-proj-show")[0].removeAttribute('hidden');
-}
 const app = new Vue({
     el: '#app'
 });

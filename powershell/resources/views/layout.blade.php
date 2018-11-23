@@ -50,11 +50,13 @@
             }
 
             .content {
+                font-size: 20px;
+                margin: 0px 100px;
                 /*text-align: center;*/
             }
 
             .title {
-                font-size: 84px;
+                font-size: 28px;
             }
 
             .links > a {
@@ -136,6 +138,9 @@
                 </div> -->
         </div>
     </div>
+    <script src="/js/jquery-3.3.1.min.js" type="text/javascript">
+    </script>
+    @yield('scripts');
 </body>
 <!-- <ul>
         <li>
@@ -149,5 +154,4 @@
         </li>
     </ul>
 
-</body>
-</html> -->
+</body>-->

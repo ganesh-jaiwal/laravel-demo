@@ -38,14 +38,15 @@ class ProjectsController extends Controller
     public function store(Request $request)
     {
         // return request()->all();
-        $project = new Project();
-
-        $project->name = request('name');
-
-        $project->discription = request('discription');
-
-        $project->save();
-
+        $attributes = request()->validate([
+            'name'        => ['required', 'min:4'],
+            'discription' => ['required', 'min:10'],
+        ]);
+        Project::create($attributes);
+        // Project::create([
+        //     'name'        => request('name'),
+        //     'discription' => request('discription'),
+        // ]);
         return redirect('/projects');
     }
 
@@ -57,7 +58,7 @@ class ProjectsController extends Controller
      */
     public function show(Project $project)
     {
-        //
+        return view('projects.show', compact('project'));
     }
 
     /**
@@ -85,9 +86,10 @@ class ProjectsController extends Controller
     public function update(Request $request, Project $project)
     {
         // dd(request()->all());
-        $project->name        = request('name');
-        $project->discription = request('discription');
-        $project->save();
+        $project->update(request(['name', 'discription']));
+        // $project->name        = request('name');
+        // $project->discription = request('discription');
+        // $project->save();
         return redirect('/projects');
     }
 
@@ -99,6 +101,8 @@ class ProjectsController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        // dd('Hello');
+        $project->delete();
+        return redirect('/projects');
     }
 }
