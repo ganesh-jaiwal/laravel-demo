@@ -28,9 +28,7 @@
             Description
         </label>
         <div class="control">
-            <textarea class="textarea" name="discription" placeholder="Name of projetc" readonly="" value="{{$project->discription}}">
-                {{$project->discription}}
-            </textarea>
+            <textarea class="textarea" name="discription" placeholder="Name of projetc" readonly="" value="{{$project->discription}}">{{$project->discription}}</textarea>
         </div>
     </div>
     <div class="field">

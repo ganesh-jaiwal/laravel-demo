@@ -10,4 +10,13 @@ class Project extends Model
     // protected $fillable = [
     //     'name', 'discription',
     // ];
+    public function tasks()
+    {
+        return $this->hasMany(Task::class);
+    }
+
+    public function addTask($task)
+    {
+    	$this->tasks()->create($task);
+    }
 }

@@ -12,66 +12,70 @@
                 <!-- Styles -->
                 <style>
                     html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+                        background-color: #fff;
+                        color: #636b6f;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 200;
+                        height: 100vh;
+                        margin: 0;
+                    }
 
-            .full-height {
-                height: 100vh;
-            }
+                    .full-height {
+                        height: 100vh;
+                    }
+                    
+                    .is-completed {
+                        text-decoration: line-through;
+                    }
 
-            .make-it-at-top {
-                display: block !important;
-                /*margin-top: 100px;*/
-            }
+                    .make-it-at-top {
+                        display: block !important;
+                        /*margin-top: 100px;*/
+                    }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+                    .flex-center {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
 
-            .heading {
-                margin-top: 100px;
-            }
+                    .heading {
+                        margin-top: 100px;
+                    }
 
-            .position-ref {
-                /*position: relative;*/
-            }
+                    .position-ref {
+                        /*position: relative;*/
+                    }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+                    .top-right {
+                        position: absolute;
+                        right: 10px;
+                        top: 18px;
+                    }
 
-            .content {
-                font-size: 20px;
-                margin: 0px 100px;
-                /*text-align: center;*/
-            }
+                    .content {
+                        font-size: 20px;
+                        margin: 0px 100px;
+                        /*text-align: center;*/
+                    }
 
-            .title {
-                font-size: 28px;
-            }
+                    .title {
+                        font-size: 28px;
+                    }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+                    .links > a {
+                        color: #636b6f;
+                        padding: 0 25px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        letter-spacing: .1rem;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+                    .m-b-md {
+                        margin-bottom: 30px;
+                    }
                 </style>
             </meta>
         </meta>
