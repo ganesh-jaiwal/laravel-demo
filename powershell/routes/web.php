@@ -23,6 +23,8 @@ Route::patch('/tasks/{task}', 'ProjectTaskController@update');
 
 Route::post('/projects/{project}/tasks', 'ProjectTaskController@store');
 
+Route::get('/vue-demo', 'PageController@vueDemo');
+
 Route::get('/', 'PageController@home');
 
 Route::get('/contact', 'PageController@contact');

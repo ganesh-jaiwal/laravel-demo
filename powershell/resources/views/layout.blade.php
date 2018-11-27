@@ -61,6 +61,8 @@
 
                     .title {
                         font-size: 28px;
+                        cursor: pointer;
+                        color: #2366d1;
                     }
 
                     .links > a {
@@ -85,6 +87,9 @@
     <div class="flex-center position-ref full-height make-it-at-top">
         @if (Route::has('login'))
         <div class="top-right links">
+            <a href="{{ url('/vue-demo') }}">
+                Vue.Js Demo
+            </a>
             @auth
             <a href="{{ url('/') }}">
                 Home
@@ -125,7 +130,7 @@
                     @endauth
         </div>
         @endif
-        <div class="content">
+        <div class="content" id="content">
             @yield('heading')
             @yield('content')
             <!-- <div class="title m-b-md">

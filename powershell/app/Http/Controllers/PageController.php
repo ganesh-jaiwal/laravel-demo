@@ -20,6 +20,11 @@ class PageController extends Controller
         ]);
     }
 
+    public function vueDemo()
+    {
+        return view('vue');
+    }
+
     public function contact()
     {
         return view('contact');
