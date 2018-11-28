@@ -3,4 +3,5 @@
 2. **v-for** "To create elements using for loop for an array"
 3. **v-text** "to set the innerHTML to the element"
 4. **v-on:<event name as argument>="name of method"** "assign event listener to element"
-5. 
+5. **v-if=<statement>** - checks conditions and aply the changes.
+6. **v-show=<boolen variable>** - to show or hide the component or element
