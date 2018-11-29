@@ -19,6 +19,10 @@
                         height: 100vh;
                         margin: 0;
                     }
+                    
+                    hr {
+                        margin: 0.5rem 0;
+                    }
 
                     .full-height {
                         height: 100vh;
@@ -56,13 +60,15 @@
                     .content {
                         font-size: 20px;
                         margin: 0px 100px;
+                        margin-bottom: 2em;
                         /*text-align: center;*/
                     }
 
                     .title {
-                        font-size: 28px;
+                        font-size: 15px;
                         cursor: pointer;
                         color: #2366d1;
+                        margin-bottom: 0.5rem !important;
                     }
 
                     .links > a {
