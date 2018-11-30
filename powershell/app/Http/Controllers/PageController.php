@@ -25,6 +25,11 @@ class PageController extends Controller
         return view('vue');
     }
 
+    public function vueWithLaravel()
+    {
+        return view('vueWithLaravel');
+    }
+
     public function contact()
     {
         return view('contact');

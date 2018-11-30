@@ -108,9 +108,16 @@
 	</namedslotmodal>
 	<button class="button is-link" @click="showModal=true">Show Modal</button>
 </div>
+<hr/>
+<div>
+	<a class="button is-primary" style="font: 400 18.3333px Arial;" href="{{ url('/') }}">
+		Vue With laravel
+	</a>
+</div>
 @endsection
 @section('scripts')
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{{-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> --}}
+<script type="text/javascript" src="{!! asset('/js/vue.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('/js/vueDemo.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('/js/components/cpmponentPractice.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('/js/components/componentMessagePanel.js') !!}"></script>
